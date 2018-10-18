@@ -1,10 +1,20 @@
 package com.tz.app
 
-import org.springframework.boot.SpringApplication
+import org.springframework.boot.{SpringApplication, SpringBootConfiguration}
+import org.springframework.boot.autoconfigure.SpringBootApplication
 
-object tzApplication extends App {
+@SpringBootApplication
+@SpringBootConfiguration
+class  tzApplication{
+
+}
+
+object tzApplication  {
 
 
-    SpringApplication.run(classOf[AppConfig])
+     def main(args: Array[String]): Unit = {
+        SpringApplication.run(classOf[AppConfig])
+    }
+
 
 }

@@ -7,7 +7,11 @@ class indexController {
 
     @GetMapping(value=Array("/index"))
     def index():String={
-        return "helm is better "
+        return "helm maven  is better "
     }
 
+    @GetMapping(value=Array("/find"))
+    def find():String={
+        return "is better "
+    }
 }
